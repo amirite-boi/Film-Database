@@ -1,64 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Browse Our Films | Clicker</title>
-    <link rel="stylesheet" href="https://use.typekit.net/tuw4zra.css">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="icon" href="/assets/film-reel-svgrepo-com.svg">
+    <link rel="stylesheet" href="https://use.typekit.net/tuw4zra.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/assets/film-reel-svgrepo-com.svg" />
     <script
-        src="https://kit.fontawesome.com/ff4c1d9e56.js"
-        crossorigin = "anonymous"
+      src="https://kit.fontawesome.com/ff4c1d9e56.js"
+      crossorigin="anonymous"
     ></script>
     <script src="index.js"></script>
-</head>
-<body>
-    <section id="landing">
-        <nav>
-            <div class="nav__wrapper">
-                <div class="logo-wrapper">
-                    <figure>
-                        <img id="logo" src="/assets/film-reel-svgrepo-com.svg" alt="Clicker Logo"/>
-                    </figure>
-                    <span class="color logo-text">clicker</span>
-                </div>
-                <ul class="nav__link--list">
-                    <li class="nav__link">
-                        <a 
-                            href="/index.html"
-                            class="nav__link--anchor link__hover-effect">
-                        Home
-                        </a>
-                    </li>
-                    <li class="nav__link">
-                        <a 
-                            href="#"
-                            class="nav__link--anchor link__hover-effect">
-                        Films
-                        </a>
-                    </li>
-                    <li class="nav__link">
-                        <a 
-                            href=""
-                            class="button nav__link--anchor link__hover-effect">
-                        Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <header class="header">
-            <div class="header-content">
-                <h2 class="tagline"> Browse our films </h2>
-            </div>
-            <div class="input__wrapper">
-                <input type="text" placeholder="Search by Genre, Title, or Keyword">
-                <div class="search__wrapper">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
-        </header>
+  </head>
+  <body>
+    <section id="search__landing">
+      <nav>
+        <div class="nav__wrapper">
+          <div class="logo-wrapper">
+            <figure>
+              <img
+                id="logo"
+                src="/assets/film-reel-svgrepo-com.svg"
+                alt="Clicker Logo"
+              />
+            </figure>
+            <span class="color logo-text">clicker</span>
+          </div>
+          <ul class="nav__link--list">
+            <li class="nav__link">
+              <a
+                href="/index.html"
+                class="nav__link--anchor link__hover-effect"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav__link">
+              <a href="#" class="nav__link--anchor link__hover-effect">
+                Films
+              </a>
+            </li>
+            <li class="nav__link">
+              <a href="" class="button nav__link--anchor link__hover-effect">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <header class="header">
+        <div class="header-content">
+          <h2 class="tagline">Browse our films</h2>
+        </div>
+        <div class="input__wrapper">
+          <input type="text" placeholder="Search by Genre, Title, or Keyword" />
+          <div class="search__wrapper">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </header>
     </section>
-</body>
+    <section id="search__films">
+      <div class="progress-bar"></div>
+      <div class="search__container">
+        <div class="row search__row">
+          <h2 class="subtitle">Search results:</h2>
+          <div class="range__wrapper">
+            <div class="year__range">
+              <span class="search__text">Year range:</span>
+              1978 to 2025
+            </div>
+            <div class="slider__wrapper">
+              <div class="slider__container">
+                <div class="left__btn slider__btn--wrapper">
+                    <div class="slider__btn">
+                    </div>
+                </div>
+                <div class="right__btn slider__btn--wrapper">
+                    <div class="slider__btn">
+                    </div>
+                </div>
+                <div class="slider__bar"></div>
+              </div>
+              <div class="slider__range">
+                <span>1978</span>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row films__row">
+          <div class="film__wrapper">
+            <figure class="film__poster">
+              <img
+                class="film__poster--img"
+                src="https://m.media-amazon.com/images/M/MV5BNWE5MGI3MDctMmU5Ni00YzI2LWEzMTQtZGIyZDA5MzQzNDBhXkEyXkFqcGc@._V1_SX300.jpg"
+                alt="Title"
+              />
+            </figure>
+            <div class="film__content">
+              <div class="title film__content--title">
+                Guardians of the Galaxy Vol. 2
+              </div>
+              <div class="film__content--extra-info">
+                  <div class="title film__content--genre">
+                    Genre: Adventure, Action, Sci-Fi
+                  </div>
+                  <div class="film__content--rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-alt"></i>
+                  </div>
+                  <div class="film__content--info">
+                    <div class="film__info--director">Director: James Gunn</div>
+                    <div class="film__info--year">Year: 2017</div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
