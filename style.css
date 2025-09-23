@@ -69,7 +69,11 @@ input:focus {
     border-radius: 25px;
 }
 
-/* NAVIGATION */
+/* 
+
+NAVIGATION 
+
+*/
 
 nav {
     display: flex;
@@ -124,7 +128,12 @@ nav {
     color: #00E7F0;
 }
 
-/* LANDING */
+/* 
+
+LANDING 
+
+*/
+
 #landing {
     min-height: 100vh;
 }
@@ -166,6 +175,7 @@ nav {
 .search__btn {
     background-color: #ECF1FE;
     border: none;
+    font-size: 32px;
     transition: all 300ms ease;
     margin-left: 48px;
     width: 200px;
@@ -176,7 +186,69 @@ nav {
     box-shadow: 0 5px 80px 0 #00e8f03b;
 }
 
-/* SEARCH PAGE */
+/* 
+
+ANIMATION 
+
+*/
+
+.header-content {
+    opacity: 0;
+    animation: header-appear 1.5s ease forwards 1s;
+}
+
+.input__wrapper {
+    opacity: 0;
+    animation: header-appear 1.5s ease forwards 1.5s;
+}
+
+@keyframes header-appear {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.films__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  font-size: 60px;
+  color: #3A5CAB;
+}
+
+.films__loading--spinner {
+  display: none !important;
+}
+
+.films__loading .films__loading--spinner {
+  display: block !important;
+}
+
+.fa-spinner {
+  animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 
+
+SEARCH PAGE 
+
+*/
 
 #search__landing {
     height: 326px;
@@ -200,7 +272,7 @@ nav {
 
 #search__films {
     background-color: #ECF1FE;
-    height: 100vh;
+    height: 100%;
 }
 
 .progress-bar {
@@ -260,14 +332,6 @@ nav {
     z-index: 5;
 }
 
-.left__btn {
-    left: 0px;
-}
-
-.right__btn {
-    right: 0px;
-}
-
 .slider__btn {
     width: 16px;
     height: 16px;
@@ -312,6 +376,10 @@ nav {
     align-items: start;
     padding: 0 16px 16px 16px;
 }
+
+/*.hidden {
+    opacity: 0;
+}*/
 
 .film__poster {
     margin-bottom: 8px;

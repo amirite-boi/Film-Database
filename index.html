@@ -11,7 +11,7 @@
         src="https://kit.fontawesome.com/ff4c1d9e56.js"
         crossorigin = "anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <section id="landing">
@@ -54,7 +54,7 @@
                 <h2 class="tagline"> Find your next favorite show with <span class="color">clicker</span></h2>
             </div>
             <div class="input__wrapper">
-                <input type="text" placeholder="Search by Genre, Title, or Keyword">
+                <input id="search" type="text" placeholder="Search by Genre, Title, or Keyword">
                 <button class="button search__btn not-loading">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>

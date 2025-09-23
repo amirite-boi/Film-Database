@@ -11,7 +11,7 @@
       src="https://kit.fontawesome.com/ff4c1d9e56.js"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <section id="search__landing">
@@ -54,7 +54,7 @@
           <h2 class="tagline">Browse our films</h2>
         </div>
         <div class="input__wrapper">
-          <input type="text" placeholder="Search by Genre, Title, or Keyword" />
+          <input id="search" type="text" placeholder="Search by Genre, Title, or Keyword"/>
           <div class="search__wrapper">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
@@ -73,11 +73,11 @@
             </div>
             <div class="slider__wrapper">
               <div class="slider__container">
-                <div class="left__btn slider__btn--wrapper">
+                <div id="left-btn" class="left__btn slider__btn--wrapper">
                     <div class="slider__btn">
                     </div>
                 </div>
-                <div class="right__btn slider__btn--wrapper">
+                <div id="right-btn" class="right__btn slider__btn--wrapper">
                     <div class="slider__btn">
                     </div>
                 </div>
@@ -90,7 +90,10 @@
             </div>
           </div>
         </div>
-        <div class="row films__row">
+        <div class="films__loading">
+            <i class="fas fa-spinner films__loading--spinner"></i>
+          </div>
+        <div class="row films__row hidden">
           <div class="film__wrapper">
             <figure class="film__poster">
               <img
